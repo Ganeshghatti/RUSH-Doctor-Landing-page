@@ -50,13 +50,12 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 bg-[#0095ff] ${
+      className={`fixed w-full z-50 py-3 transition-all duration-300 bg-[#0069FD] ${
         scrolled ? "py-2" : "py-4"
       }`}
     >
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between">
-          {/* Logo */}
           <motion.div
             className="flex items-center"
             initial={{ opacity: 0 }}
@@ -64,12 +63,15 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
           >
             <Link href="/" className="flex items-center">
-              <span className="ml-2 text-white font-medium text-lg tracking-tight">
-                Med<span className="font-bold">Care</span>
-              </span>
+              <Image
+                src="/logo.jpg" // Replace with the path to your logo image
+                alt="MedCare Logo"
+                width={80} // Adjust width as needed
+                height={40} // Adjust height as needed
+                className="mr-2"
+              />
             </Link>
           </motion.div>
-
           {/* Desktop Navigation */}
           <motion.div
             className="hidden md:block"
@@ -102,7 +104,6 @@ const Navbar = () => {
               ))}
             </ul>
           </motion.div>
-
           {/* Right buttons */}
           <motion.div
             className="hidden md:flex items-center space-x-4"
@@ -110,21 +111,20 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <Button
+            {/* <Button
               size="sm"
               variant="ghost"
               className="text-white hover:text-white/80 hover:bg-transparent p-0"
             >
               Sign In
-            </Button>
+            </Button> */}
             <Button
               size="sm"
-              className="bg-white text-[#0095ff] hover:bg-white/90 transition-all px-4 py-1"
+              className="bg-white text-[#0069FD] hover:bg-white/90 transition-all px-4 py-1"
             >
               Register
             </Button>
           </motion.div>
-
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
@@ -175,7 +175,7 @@ const Navbar = () => {
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="bg-[#0095ff] rounded shadow-lg">
+              <div className="bg-[#0069FD] rounded shadow-lg">
                 <ul className="space-y-1 p-3">
                   {navItems.map((item) => (
                     <li key={item.name}>
@@ -199,13 +199,7 @@ const Navbar = () => {
                 </ul>
                 <div className="border-t border-white/10 p-3 flex space-x-3">
                   <Button
-                    className="flex-1 bg-transparent hover:bg-white/10 text-white border border-white/30"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Sign In
-                  </Button>
-                  <Button
-                    className="flex-1 bg-white text-[#0095ff] hover:bg-white/90"
+                    className="flex-1 bg-white text-[#0069FD] hover:bg-white/90"
                     onClick={() => setIsOpen(false)}
                   >
                     Register

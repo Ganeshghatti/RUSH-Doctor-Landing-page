@@ -9,28 +9,15 @@ const Footer = () => {
     {
       title: "Features",
       links: [
-        { name: "Profile Setup", href: "#features" },
-        { name: "Consultation Options", href: "#features" },
-        { name: "Appointment Management", href: "#features" },
-        { name: "Payment System", href: "#features" },
-      ],
-    },
-    {
-      title: "Resources",
-      links: [
-        { name: "E-Prescriptions", href: "#health-records" },
-        { name: "Medical Records", href: "#health-records" },
-        { name: "Subscription Plans", href: "#features" },
-        { name: "Integration APIs", href: "#" },
-      ],
-    },
-    {
-      title: "Company",
-      links: [
-        { name: "About Us", href: "#" },
-        { name: "Contact", href: "#cta" },
-        { name: "Privacy Policy", href: "#" },
-        { name: "Terms of Service", href: "#" },
+        { name: "Home", href: "#hero", id: "hero" },
+        { name: "Features", href: "#features", id: "features" },
+        {
+          name: "Health Records",
+          href: "#health-records",
+          id: "health-records",
+        },
+        { name: "Benefits", href: "#benefits", id: "benefits" },
+        { name: "Contact", href: "#cta", id: "cta" },
       ],
     },
   ];
@@ -49,34 +36,18 @@ const Footer = () => {
                 className="mb-6"
               >
                 <Link href="/" className="flex items-center">
-                  <div className="h-10 w-10 bg-[#0095ff] rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                    R
-                  </div>
-                  <span className="ml-2 text-xl font-bold text-gray-800">
-                    RUSH<span className="text-[#0095ff]">DR</span>
-                  </span>
+                  <Image
+                    src="/logo.jpg" // Replace with the path to your logo image
+                    alt="MedCare Logo"
+                    width={80} // Adjust width as needed
+                    height={40} // Adjust height as needed
+                    className="mr-2"
+                  />
                 </Link>
                 <p className="mt-4 text-gray-600 max-w-md">
                   REACH US SEEK HELP DOCTOR - The One and Only Support System
                   for Health – by Doctors, for Patient's.
                 </p>
-                <div className="mt-6 flex space-x-4">
-                  {[
-                    { name: "Twitter", icon: "ri-twitter-fill" },
-                    { name: "Facebook", icon: "ri-facebook-fill" },
-                    { name: "Instagram", icon: "ri-instagram-fill" },
-                    { name: "LinkedIn", icon: "ri-linkedin-fill" },
-                  ].map((social, index) => (
-                    <a
-                      key={index}
-                      href="#"
-                      aria-label={social.name}
-                      className="h-10 w-10 rounded-full bg-[#0095ff]/10 flex items-center justify-center text-[#0095ff] hover:bg-[#0095ff] hover:text-white transition-colors"
-                    >
-                      <i className={social.icon}></i>
-                    </a>
-                  ))}
-                </div>
               </motion.div>
             </div>
 
@@ -96,7 +67,7 @@ const Footer = () => {
                     <li key={linkIdx}>
                       <a
                         href={link.href}
-                        className="text-gray-600 hover:text-[#0095ff] transition-colors"
+                        className="text-gray-600 hover:text-[#0069FD] transition-colors"
                       >
                         {link.name}
                       </a>
@@ -116,19 +87,19 @@ const Footer = () => {
             <div className="flex space-x-6">
               <a
                 href="#"
-                className="text-sm text-gray-500 hover:text-[#0095ff]"
+                className="text-sm text-gray-500 hover:text-[#0069FD]"
               >
                 Privacy Policy
               </a>
               <a
                 href="#"
-                className="text-sm text-gray-500 hover:text-[#0095ff]"
+                className="text-sm text-gray-500 hover:text-[#0069FD]"
               >
                 Terms of Service
               </a>
               <a
                 href="#"
-                className="text-sm text-gray-500 hover:text-[#0095ff]"
+                className="text-sm text-gray-500 hover:text-[#0069FD]"
               >
                 Cookie Policy
               </a>

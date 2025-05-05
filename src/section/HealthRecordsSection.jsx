@@ -7,7 +7,7 @@ const HealthRecordsSection = () => {
   return (
     <section
       id="health-records"
-      className="py-24 bg-gradient-to-br from-[#f8faff] to-white"
+      className="py-24  bg-gradient-to-br from-[#f8faff] to-white"
     >
       <div className="container mx-auto px-4">
         <motion.div
@@ -20,7 +20,7 @@ const HealthRecordsSection = () => {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-800">
             E-Prescriptions & Medical Records
           </h2>
-          <div className="w-20 h-1 bg-[#0095ff] mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-[#0069FD] mx-auto mb-6"></div>
           <p className="text-gray-600 text-lg">
             Seamlessly manage patient information and prescriptions with our
             secure digital tools.
@@ -38,7 +38,7 @@ const HealthRecordsSection = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-xl bg-white p-3 border border-gray-100">
               <div className="aspect-w-16 aspect-h-9 relative h-[350px] rounded-xl overflow-hidden">
                 <Image
-                  src="/medical-records.jpg"
+                  src="/doctor.jpg"
                   alt="Digital Medical Records Interface"
                   fill
                   className="object-cover"
@@ -73,7 +73,7 @@ const HealthRecordsSection = () => {
                       viewport={{ once: true }}
                       transition={{ delay: 0.1 * idx, duration: 0.4 }}
                     >
-                      <div className="h-6 w-6 rounded-full bg-[#0095ff]/10 flex items-center justify-center text-[#0095ff] mr-3 mt-0.5">
+                      <div className="h-6 w-6 rounded-full bg-[#0069FD]/10 flex items-center justify-center text-[#0069FD] mr-3 mt-0.5">
                         <svg
                           className="h-3 w-3"
                           viewBox="0 0 20 20"
@@ -104,7 +104,7 @@ const HealthRecordsSection = () => {
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
               <div className="p-6">
                 <div className="flex items-center mb-6">
-                  <div className="h-10 w-10 rounded-full bg-[#0095ff]/15 flex items-center justify-center text-[#0095ff]">
+                  <div className="h-10 w-10 rounded-full bg-[#0069FD]/15 flex items-center justify-center text-[#0069FD]">
                     <svg
                       className="h-5 w-5"
                       fill="none"
@@ -130,7 +130,7 @@ const HealthRecordsSection = () => {
                   compliance with our intuitive e-prescription system.
                 </p>
 
-                <div className="bg-[#0095ff]/5 rounded-xl p-5 mb-6">
+                <div className="bg-[#0069FD]/5 rounded-xl p-5 mb-6">
                   <h4 className="font-medium text-gray-800 mb-3">
                     Key Benefits
                   </h4>
@@ -149,7 +149,7 @@ const HealthRecordsSection = () => {
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 * idx, duration: 0.4 }}
                       >
-                        <div className="text-[#0095ff] mr-2">✓</div>
+                        <div className="text-[#0069FD] mr-2">✓</div>
                         <p className="text-sm text-gray-600">{benefit}</p>
                       </motion.div>
                     ))}
@@ -161,7 +161,7 @@ const HealthRecordsSection = () => {
                     Secure Communication
                   </h4>
                   <div className="flex items-start mb-3">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-[#0095ff]/10 flex items-center justify-center text-[#0095ff] mr-3">
+                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-[#0069FD]/10 flex items-center justify-center text-[#0069FD] mr-3">
                       <svg
                         className="h-4 w-4"
                         fill="none"
@@ -187,7 +187,7 @@ const HealthRecordsSection = () => {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-[#0095ff]/10 flex items-center justify-center text-[#0095ff] mr-3">
+                    <div className="flex-shrink-0 h-8 w-8 rounded-full bg-[#0069FD]/10 flex items-center justify-center text-[#0069FD] mr-3">
                       <svg
                         className="h-4 w-4"
                         fill="none"
@@ -215,13 +215,13 @@ const HealthRecordsSection = () => {
                 </div>
 
                 <motion.div
-                  className="bg-[#0095ff]/5 p-4 rounded-lg border border-[#0095ff]/20 mt-6"
+                  className="bg-[#0069FD]/5 p-4 rounded-lg border border-[#0069FD]/20 mt-6"
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.5, duration: 0.4 }}
                 >
-                  <p className="text-sm text-[#0095ff] font-medium">
+                  <p className="text-sm text-[#0069FD] font-medium">
                     Coming in Phase 2
                   </p>
                   <p className="text-gray-600 text-sm mt-1">

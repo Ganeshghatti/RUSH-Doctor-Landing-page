@@ -7,7 +7,7 @@ const CTASection = () => {
   return (
     <section id="cta" className="py-20 overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="relative bg-[#0095ff] rounded-3xl overflow-hidden">
+        <div className="relative bg-[#0069FD] rounded-3xl overflow-hidden">
           <div className="absolute top-0 right-0 w-1/2 h-full opacity-10">
             <svg
               viewBox="0 0 200 200"
@@ -70,7 +70,7 @@ const CTASection = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-                  <Button className="bg-white text-[#0095ff] hover:bg-white/90 hover:text-[#0077cc] font-medium px-6 py-6 h-auto">
+                  <Button className="bg-white text-[#0069FD] hover:bg-white/90 hover:text-[#0077cc] font-medium px-6 py-6 h-auto">
                     Register Now
                   </Button>
                   <Button
@@ -132,7 +132,7 @@ const CTASection = () => {
                     </div>
                     <Button
                       type="submit"
-                      className="w-full bg-white text-[#0095ff] hover:bg-white/90 font-medium"
+                      className="w-full bg-white text-[#0069FD] hover:bg-white/90 font-medium"
                     >
                       Join Waiting List
                     </Button>
@@ -145,7 +145,7 @@ const CTASection = () => {
                 </div>
 
                 <motion.div
-                  className="absolute -top-4 -right-4 bg-white p-3 rounded-lg shadow-lg text-[#0095ff] font-bold"
+                  className="absolute -top-4 -right-4 bg-white p-3 rounded-lg shadow-lg text-[#0069FD] font-bold"
                   initial={{ opacity: 0, y: 20, rotate: -5 }}
                   whileInView={{ opacity: 1, y: 0, rotate: 0 }}
                   viewport={{ once: true }}

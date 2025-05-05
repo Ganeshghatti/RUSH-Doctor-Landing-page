@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="pt-32 pb-16 overflow-hidden">
+    <section
+      id="hero"
+      className="text-center md:text-left pt-10 md:pt-16 md:pb-16 overflow-hidden"
+    >
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Text Content */}
@@ -22,8 +25,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              RUSHDR <span className="text-[#0095ff]">–</span> REACH US SEEK
-              HELP DOCTOR
+              REACH US SEEK HELP
             </motion.h1>
 
             <motion.p
@@ -51,7 +53,7 @@ const HeroSection = () => {
 
               <div className="flex flex-col space-y-3">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-[#0095ff]/10 flex items-center justify-center text-[#0095ff] mr-2">
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-[#0069FD]/10 flex items-center justify-center text-[#0069FD] mr-2">
                     ✓
                   </div>
                   <p className="text-gray-600">
@@ -61,7 +63,7 @@ const HeroSection = () => {
                   </p>
                 </div>
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-[#0095ff]/10 flex items-center justify-center text-[#0095ff] mr-2">
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-[#0069FD]/10 flex items-center justify-center text-[#0069FD] mr-2">
                     ✓
                   </div>
                   <p className="text-gray-600">
@@ -72,14 +74,8 @@ const HeroSection = () => {
               </div>
 
               <div className="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <Button className="bg-[#0095ff] hover:bg-[#0077cc] text-white px-6 py-2">
+                <Button className="bg-[#0069FD] hover:bg-[#0077cc] text-white px-6 py-2">
                   Get Started
-                </Button>
-                <Button
-                  variant="outline"
-                  className="border-[#0095ff] text-[#0095ff] hover:bg-[#0095ff]/10 px-6 py-2"
-                >
-                  Learn More
                 </Button>
               </div>
             </motion.div>
@@ -87,21 +83,21 @@ const HeroSection = () => {
 
           {/* Hero Image */}
           <motion.div
-            className="lg:w-1/2 relative"
+            className="lg:w-1/2 relative hidden md:block"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="relative h-[400px] md:h-[500px] w-full">
-              <div className="absolute inset-0 bg-[#0095ff]/5 rounded-2xl overflow-hidden">
+            <div className=" relative h-[400px] md:h-[500px] w-full">
+              <div className="absolute inset-0 bg-[#0069FD]/5 rounded-2xl overflow-hidden">
                 <motion.div
-                  className="absolute top-0 right-0 bottom-0 left-0 bg-gradient-to-br from-[#0095ff]/20 to-transparent rounded-2xl"
+                  className="absolute top-0 right-0 bottom-0 left-0 bg-gradient-to-br from-[#0069FD]/20 to-transparent rounded-2xl"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1.2 }}
                 />
                 <Image
-                  src="/doctor-hero.jpg"
+                  src="/doctor-1.jpg"
                   alt="Doctor using RUSHDR platform"
                   fill
                   className="object-cover rounded-2xl"
@@ -111,15 +107,15 @@ const HeroSection = () => {
 
               {/* Floating Elements */}
               <motion.div
-                className="absolute -top-4 -right-4 bg-white p-4 rounded-lg shadow-lg"
+                className=" absolute -top-4 -right-4 bg-white p-4 rounded-lg shadow-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
                 <div className="flex items-center">
-                  <div className="h-8 w-8 rounded-full bg-[#0095ff]/20 flex items-center justify-center">
+                  <div className="h-8 w-8 rounded-full bg-[#0069FD]/20 flex items-center justify-center">
                     <svg
-                      className="h-4 w-4 text-[#0095ff]"
+                      className="h-4 w-4 text-[#0069FD]"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -147,9 +143,9 @@ const HeroSection = () => {
                 transition={{ duration: 0.6, delay: 1 }}
               >
                 <div className="flex items-center">
-                  <div className="h-8 w-8 rounded-full bg-[#0095ff]/20 flex items-center justify-center">
+                  <div className="h-8 w-8 rounded-full bg-[#0069FD]/20 flex items-center justify-center">
                     <svg
-                      className="h-4 w-4 text-[#0095ff]"
+                      className="h-4 w-4 text-[#0069FD]"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"

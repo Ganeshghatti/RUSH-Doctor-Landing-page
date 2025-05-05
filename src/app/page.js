@@ -11,7 +11,7 @@ export default function Home() {
       <USPSection />
       <FeaturesSection />
       <HealthRecordsSection />
-      <CTASection />
+      {/* <CTASection /> */}
     </main>
   );
 }

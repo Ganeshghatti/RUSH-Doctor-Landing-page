@@ -19,9 +19,9 @@ const USPSection = () => {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-800">
             Unique Selling Proposition
           </h2>
-          <div className="w-20 h-1 bg-[#0095ff] mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-[#0069FD] mx-auto mb-6"></div>
           <motion.div
-            className="text-2xl font-semibold text-[#0095ff] mb-8"
+            className="text-2xl font-semibold text-[#0069FD] mb-8"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -65,7 +65,7 @@ const USPSection = () => {
                       viewport={{ once: true }}
                       transition={{ duration: 0.3, delay: 0.4 + index * 0.1 }}
                     >
-                      <div className="flex-shrink-0 h-6 w-6 rounded-full bg-[#0095ff]/10 flex items-center justify-center text-[#0095ff] mr-3 mt-0.5">
+                      <div className="flex-shrink-0 h-6 w-6 rounded-full bg-[#0069FD]/10 flex items-center justify-center text-[#0069FD] mr-3 mt-0.5">
                         <svg
                           className="h-3 w-3"
                           fill="currentColor"
@@ -114,7 +114,7 @@ const USPSection = () => {
                   ].map((feature, index) => (
                     <motion.div
                       key={index}
-                      className="bg-[#0095ff]/5 rounded-lg p-4 border border-[#0095ff]/10"
+                      className="bg-[#0069FD]/5 rounded-lg p-4 border border-[#0069FD]/10"
                       initial={{ opacity: 0, y: 15 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
@@ -126,7 +126,7 @@ const USPSection = () => {
                       }}
                     >
                       <div className="flex items-start">
-                        <div className="flex-shrink-0 h-6 w-6 rounded-full bg-[#0095ff]/20 flex items-center justify-center text-[#0095ff] mr-3">
+                        <div className="flex-shrink-0 h-6 w-6 rounded-full bg-[#0069FD]/20 flex items-center justify-center text-[#0069FD] mr-3">
                           ✓
                         </div>
                         <div>

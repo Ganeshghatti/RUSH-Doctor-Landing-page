@@ -138,7 +138,7 @@ const FeaturesSection = () => {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-800">
             RUSHDR Features & Benefits
           </h2>
-          <div className="w-20 h-1 bg-[#0095ff] mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-[#0069FD] mx-auto mb-6"></div>
           <p className="text-gray-600 text-lg">
             Designed specifically for medical professionals, our platform offers
             powerful tools to streamline your practice.
@@ -156,7 +156,7 @@ const FeaturesSection = () => {
             <motion.div
               variants={item}
               key={index}
-              className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:border-[#0095ff]/30 transition-all"
+              className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:border-[#0069FD]/30 transition-all"
               whileHover={{
                 boxShadow:
                   "0 20px 25px -5px rgba(0, 149, 255, 0.1), 0 10px 10px -5px rgba(0, 149, 255, 0.04)",
@@ -164,7 +164,7 @@ const FeaturesSection = () => {
               }}
             >
               <div className="flex items-start">
-                <div className="flex-shrink-0 bg-[#0095ff]/10 p-3 rounded-lg text-[#0095ff]">
+                <div className="flex-shrink-0 bg-[#0069FD]/10 p-3 rounded-lg text-[#0069FD]">
                   {feature.icon}
                 </div>
                 <div className="ml-5">
@@ -175,7 +175,7 @@ const FeaturesSection = () => {
                   <ul className="space-y-2">
                     {feature.details.map((detail, i) => (
                       <li key={i} className="flex items-start">
-                        <div className="flex-shrink-0 text-[#0095ff] mr-2">
+                        <div className="flex-shrink-0 text-[#0069FD] mr-2">
                           •
                         </div>
                         <p className="text-gray-600 text-sm">{detail}</p>
@@ -189,12 +189,12 @@ const FeaturesSection = () => {
         </motion.div>
 
         {/* Subscription Plans Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="bg-gradient-to-r from-[#0095ff]/5 to-[#0095ff]/10 rounded-2xl p-8 mb-16"
+          className="bg-gradient-to-r from-[#0069FD]/5 to-[#0069FD]/10 rounded-2xl p-8 mb-16"
         >
           <h3 className="text-xl font-semibold text-center mb-8 text-gray-800">
             Subscription Plans & Charges
@@ -227,14 +227,14 @@ const FeaturesSection = () => {
                 <h4 className="font-semibold text-gray-800 mb-1">
                   {plan.name} Subscription
                 </h4>
-                <p className="text-[#0095ff] font-medium">{plan.charge}</p>
+                <p className="text-[#0069FD] font-medium">{plan.charge}</p>
                 {plan.subtext && (
                   <p className="text-xs text-gray-500 mt-1">{plan.subtext}</p>
                 )}
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Additional Earning Opportunities */}
         <motion.div
@@ -272,7 +272,7 @@ const FeaturesSection = () => {
             ].map((opportunity, index) => (
               <motion.div
                 key={index}
-                className="bg-[#0095ff]/5 rounded-lg p-4"
+                className="bg-[#0069FD]/5 rounded-lg p-4"
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
