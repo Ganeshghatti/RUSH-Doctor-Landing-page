@@ -85,23 +85,23 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} RUSHDR. All rights reserved.
             </div>
             <div className="flex space-x-6">
-              <a
-                href="#"
+              <Link
+                href="https://www.rushdr.com/privacy-policy"
                 className="text-sm text-gray-500 hover:text-[#0069FD]"
               >
                 Privacy Policy
-              </a>
+              </Link>
               <a
-                href="#"
+                href="https://www.rushdr.com/terms-conditions"
                 className="text-sm text-gray-500 hover:text-[#0069FD]"
               >
                 Terms of Service
               </a>
               <a
-                href="#"
+                href="https://www.rushdr.com/refund-policy"
                 className="text-sm text-gray-500 hover:text-[#0069FD]"
               >
-                Cookie Policy
+                Refund Policy
               </a>
             </div>
           </div>

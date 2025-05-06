@@ -118,12 +118,14 @@ const Navbar = () => {
             >
               Sign In
             </Button> */}
-            <Button
-              size="sm"
-              className="bg-white text-[#0069FD] hover:bg-white/90 transition-all px-4 py-1"
-            >
-              Register
-            </Button>
+            <Link href="https://app.rushdr.com/doctor/register">
+              <Button
+                size="sm"
+                className="bg-white text-[#0069FD] hover:bg-white/90 transition-all px-4 py-1"
+              >
+                Register
+              </Button>
+            </Link>
           </motion.div>
           {/* Mobile menu button */}
           <div className="md:hidden">

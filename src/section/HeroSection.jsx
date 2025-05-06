@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -74,9 +75,11 @@ const HeroSection = () => {
               </div>
 
               <div className="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <Button className="bg-[#0069FD] hover:bg-[#0077cc] text-white px-6 py-2">
-                  Get Started
-                </Button>
+                <Link href="https://app.rushdr.com/doctor/register">
+                  <Button className="bg-[#0069FD] hover:bg-[#0077cc] text-white px-6 py-2">
+                    Get Started
+                  </Button>
+                </Link>
               </div>
             </motion.div>
           </motion.div>
