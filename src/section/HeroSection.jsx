@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="text-center md:text-left pt-10 md:pt-16 md:pb-16 overflow-hidden"
+      className="text-center md:text-left pt-28 md:pt-32 md:pb-16 overflow-hidden"
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">

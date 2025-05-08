@@ -50,9 +50,8 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full z-50 py-3 transition-all duration-300 bg-[#0069FD] ${
-        scrolled ? "py-2" : "py-4"
-      }`}
+      className={`fixed w-full z-50 py-3 transition-all duration-300 bg-[#0069FD] ${scrolled ? "py-2" : "py-4"
+        }`}
     >
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between">
@@ -64,10 +63,10 @@ const Navbar = () => {
           >
             <Link href="/" className="flex items-center">
               <Image
-                src="/logo.jpg" // Replace with the path to your logo image
+                src="/logo.png"
                 alt="MedCare Logo"
-                width={80} // Adjust width as needed
-                height={40} // Adjust height as needed
+                width={100}
+                height={50}
                 className="mr-2"
               />
             </Link>
@@ -84,9 +83,8 @@ const Navbar = () => {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className={`relative text-white hover:text-white/80 text-sm font-medium transition-colors ${
-                      activeItem === item.id ? "font-semibold" : ""
-                    }`}
+                    className={`relative text-white hover:text-white/80 text-sm font-medium transition-colors ${activeItem === item.id ? "font-semibold" : ""
+                      }`}
                     onClick={(e) => {
                       scrollToSection(item.id, e);
                       setActiveItem(item.id);
@@ -183,11 +181,10 @@ const Navbar = () => {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className={`block py-2 px-3 text-white hover:bg-white/10 rounded transition-colors ${
-                          activeItem === item.id
-                            ? "font-medium bg-white/10"
-                            : ""
-                        }`}
+                        className={`block py-2 px-3 text-white hover:bg-white/10 rounded transition-colors ${activeItem === item.id
+                          ? "font-medium bg-white/10"
+                          : ""
+                          }`}
                         onClick={(e) => {
                           scrollToSection(item.id, e);
                           setActiveItem(item.id);
@@ -199,14 +196,16 @@ const Navbar = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="border-t border-white/10 p-3 flex space-x-3">
-                  <Button
-                    className="flex-1 bg-white text-[#0069FD] hover:bg-white/90"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Register
-                  </Button>
-                </div>
+                <Link href="https://app.rushdr.com/doctor/register">
+                  <div className="border-t border-white/10 p-3 flex space-x-3">
+                    <Button
+                      className="flex-1 bg-white text-[#0069FD] hover:bg-white/90"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Register
+                    </Button>
+                  </div>
+                </Link>
               </div>
             </motion.div>
           )}
