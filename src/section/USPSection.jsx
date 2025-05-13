@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const USPSection = () => {
   return (
@@ -82,6 +84,20 @@ const USPSection = () => {
                     </motion.li>
                   ))}
                 </ul>
+
+                <motion.div
+                  className="mt-8"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.6 }}
+                >
+                  <Link href="https://app.rushdr.com/doctor/register">
+                    <Button className="bg-[#0069FD] hover:bg-[#0077cc] text-white px-6 py-2">
+                      Join Our Community
+                    </Button>
+                  </Link>
+                </motion.div>
               </motion.div>
 
               <motion.div
