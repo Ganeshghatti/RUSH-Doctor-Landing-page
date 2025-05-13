@@ -2,6 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const HealthRecordsSection = () => {
   return (
@@ -233,6 +235,27 @@ const HealthRecordsSection = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Final CTA */}
+        <motion.div
+          className="text-center mt-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h3 className="text-2xl font-bold text-gray-800 mb-4">
+            Ready to Transform Your Practice?
+          </h3>
+          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+            Join thousands of doctors who are already using RUSHDR to streamline their practice and provide better patient care.
+          </p>
+          <Link href="https://app.rushdr.com/doctor/register">
+            <Button className="bg-[#0069FD] hover:bg-[#0077cc] text-white px-8 py-6 text-lg h-auto">
+              Start Your Journey Today
+            </Button>
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
