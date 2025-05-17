@@ -44,8 +44,6 @@ const Navbar = () => {
     { name: "Home", href: "#hero", id: "hero" },
     { name: "Features", href: "#features", id: "features" },
     { name: "Health Records", href: "#health-records", id: "health-records" },
-    { name: "Benefits", href: "#benefits", id: "benefits" },
-    { name: "Contact", href: "#cta", id: "cta" },
   ];
 
   return (
@@ -61,7 +59,11 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center" onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('hero', e);
+              setActiveItem('hero');
+            }}>
               <Image
                 src="/logo.png"
                 alt="MedCare Logo"
@@ -119,7 +121,7 @@ const Navbar = () => {
             <Link href="https://app.rushdr.com/doctor/register">
               <Button
                 size="sm"
-                className="bg-white text-[#0069FD] hover:bg-white/90 transition-all px-4 py-1"
+                className="bg-white text-[#0069FD] hover:bg-white/90 transition-all px-4 py-1 cursor-pointer"
               >
                 Register
               </Button>
@@ -186,9 +188,13 @@ const Navbar = () => {
                           : ""
                           }`}
                         onClick={(e) => {
-                          scrollToSection(item.id, e);
-                          setActiveItem(item.id);
+                          e.preventDefault();
                           setIsOpen(false);
+                          // Add a small delay to ensure menu is closed before scrolling
+                          setTimeout(() => {
+                            scrollToSection(item.id, e);
+                            setActiveItem(item.id);
+                          }, 100);
                         }}
                       >
                         {item.name}
@@ -199,7 +205,7 @@ const Navbar = () => {
                 <Link href="https://app.rushdr.com/doctor/register">
                   <div className="border-t border-white/10 p-3 flex space-x-3">
                     <Button
-                      className="flex-1 bg-white text-[#0069FD] hover:bg-white/90"
+                      className="flex-1 bg-white text-[#0069FD] hover:bg-white/90 cursor-pointer"
                       onClick={() => setIsOpen(false)}
                     >
                       Register

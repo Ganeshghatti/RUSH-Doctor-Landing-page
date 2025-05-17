@@ -13,8 +13,16 @@ export function scrollToSection(sectionId, event) {
 
   const element = document.getElementById(sectionId);
   if (element) {
+    // Get the header height dynamically
+    const header = document.querySelector('header');
+    const headerHeight = header ? header.offsetHeight : 80;
+    
+    // Calculate the target position
+    const targetPosition = element.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+    // Scroll to the target position
     window.scrollTo({
-      top: element.offsetTop - 80, // Offset for the fixed header
+      top: targetPosition,
       behavior: "smooth",
     });
   }
