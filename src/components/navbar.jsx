@@ -59,11 +59,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/" className="flex items-center" onClick={(e) => {
-              e.preventDefault();
-              scrollToSection('hero', e);
-              setActiveItem('hero');
-            }}>
+           <Link href="https://rushdr.com" className="flex items-center">
               <Image
                 src="/logo.png"
                 alt="MedCare Logo"
