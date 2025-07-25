@@ -3,9 +3,9 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 export const metadata = {
-  title: "RUSHDR - Reach Us Seek Help Doctor",
+  title: "RUSHDR Doctor Login",
   description:
-    "The One and Only Support System for Health – by Doctors, for Patient's.",
+    "The One and Only Support System for Health – by Doctors, for Patients.",
   icons: {
     icon: [
       {
